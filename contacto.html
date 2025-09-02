@@ -17,8 +17,8 @@
         <img src="imagenes/frases-de-cuidado-personal.jpg" width="40%">
 
     </div>
-    <div style="text-align: center;">
-        <h2>Escríbenos para tener el gusto de atenderte.</h2>
+    <h2 style="text-align: center;">Diligencia el formulario.</h2>
+    <div style="display: flex; justify-content:center;">
         <form>
         <label>Nombre</label>
         <input type="text" aria-placeholder="En mayúscula"> <br>
@@ -26,8 +26,37 @@
         <input type="number"> <br>
         <label>Correo electrónico</label>
         <input type="email" required> <br>
+        <label>Fecha de nacimiento</label>
+        <input type="date" min="1970-01-31" max="2010-12-31"> <br> 
+        <label>Edad</label>
+        <input type="number" min="15" max="55"> <br>
+        <label>Sube una foto</label>
+        <input type="file" accept=".jpg, .png, .jepg"> <br>
+        <label>Selecciona un género</label>
+        <input type="radio" name="genero" value="hombre">Hombre
+        <input type="radio" name="genero" value="mujer">Mujer
+        <input type="radio" name="genero" value="otro">Otro
+        <br>
+        <label>Selecciona productos.</label> <br>
+        <input type="checkbox" name="producto" value="correctores">correctores
+        <input type="checkbox" name="producto" value="mascara de pestañas">Mascara de pestañas
+        <input type="checkbox" name="producto" value="polvo traslucido">Polvo traslucido
+        <br>
+        <label>¿Cómo te contactamos?</label>
+        <select name="contacto">
+             <option value="celular">celular</option>
+             <option value="correo electrónico">correo electrónico</option>
+             <option value="telepatía">telepatía</option>
+        </select>
+        <br>
+        <label>Mensaje</label>
+        <br>
+        <textarea name="mensaje"></textarea>
+        <br> <br> <br>
         <button type="submit">Enviar</button>
         <button type="reset">Borrar</button>
+        
+        
         </form>
 
     </div>
